@@ -77,6 +77,7 @@ node default {
 
   include chrome
   include dropbox
+  include emacs
   include python
 
   # common, useful packages

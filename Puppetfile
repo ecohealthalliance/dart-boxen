@@ -38,4 +38,5 @@ github "xquartz",    "1.1.0"
 # https://github.com/boxen.
 github "chrome",     "1.1.1"
 github "dropbox",    "1.1.1"
+github "emacs",      "1.1.0"
 github "python",     "1.2.1"
