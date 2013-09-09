@@ -91,6 +91,11 @@ node default {
   git::config::global {
     'color.ui': value => 'true';
   }
+  class { 'nodejs::global': version => 'v0.10.13' }
+  nodejs::module { 'coffee-script': node_version => 'v0.10.13' }
+  nodejs::module { 'jade': node_version => 'v0.10.13' }
+  nodejs::module { 'stylus': node_version => 'v0.10.13' }
+  nodejs::module { 'grunt-cli': node_version => 'v0.10.13' }
 
   # common, useful packages
   package {
