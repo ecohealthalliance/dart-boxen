@@ -84,6 +84,7 @@ node default {
   include osx::disable_app_quarantine
   include osx::software_update
   include python
+  include python::virtualenvwrapper
   include sublime_text_2
   sublime_text_2::package { 
     'Emmet':
