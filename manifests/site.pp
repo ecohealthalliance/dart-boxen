@@ -76,6 +76,7 @@ node default {
   include ruby::2_0_0
 
   include chrome
+  include dropbox
   include python
 
   # common, useful packages
