@@ -88,6 +88,9 @@ node default {
   sublime_text_2::package { 'Emmet':
     source => 'sergeche/emmet-sublime'
   }
+  git::config::global {
+    'color.ui': value => 'true';
+  }
 
   # common, useful packages
   package {
