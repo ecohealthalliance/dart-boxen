@@ -79,6 +79,10 @@ node default {
   include dropbox
   include emacs
   include mongodb
+  include osx::global::expand_save_dialog
+  include osx::finder::unhide_library
+  include osx::disable_app_quarantine
+  include osx::software_update
   include python
   include sublime_text_2
   sublime_text_2::package { 'Emmet':
