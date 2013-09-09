@@ -85,8 +85,11 @@ node default {
   include osx::software_update
   include python
   include sublime_text_2
-  sublime_text_2::package { 'Emmet':
-    source => 'sergeche/emmet-sublime'
+  sublime_text_2::package { 
+    'Emmet':
+      source => 'sergeche/emmet-sublime';
+    'CoffeeScript':
+      source => 'Xavura/CoffeeScript-Sublime-Plugin';
   }
   git::config::global {
     'color.ui': value => 'true';
