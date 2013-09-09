@@ -80,6 +80,10 @@ node default {
   include emacs
   include mongodb
   include python
+  include sublime_text_2
+  sublime_text_2::package { 'Emmet':
+    source => 'sergeche/emmet-sublime'
+  }
 
   # common, useful packages
   package {
