@@ -100,6 +100,16 @@ node default {
   nodejs::module { 'jade': node_version => 'v0.10.13' }
   nodejs::module { 'stylus': node_version => 'v0.10.13' }
   nodejs::module { 'grunt-cli': node_version => 'v0.10.13' }
+  nodejs::module { 'docpad': node_version => 'v0.10.13' }
+
+  include osx::finder
+  boxen::osx_defaults { 'Show all files':
+    user   => $::boxen_user,
+    key    => 'AppleShowAllFiles',
+    domain => 'com.apple.finder',
+    value  => true,
+    notify => Exec['killall Finder'];
+  }
 
   # common, useful packages
   package {
