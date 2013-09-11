@@ -111,6 +111,10 @@ node default {
     notify => Exec['killall Finder'];
   }
 
+  package { 'R':
+    ensure   => installed;
+  }
+
   # common, useful packages
   package {
     [
