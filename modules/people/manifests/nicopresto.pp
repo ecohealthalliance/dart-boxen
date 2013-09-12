@@ -1,4 +1,4 @@
-class people::aslagle {
+class people::nicopresto {
   git::config::global {
     'user.name':
       value => 'Nico Preston';
