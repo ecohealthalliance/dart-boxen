@@ -5,7 +5,6 @@ class people::nicopresto {
     'user.email':
       value => 'nicopresto@gmail.com';
     $home     = "/Users/${::boxen_user}"
-    include emacs
-    include projects::all
   }
+  include projects::all
 }
