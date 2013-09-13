@@ -10,7 +10,6 @@ class people::nicopresto {
      'alias.co':  value => 'checkout';
      'alias.di':  value => 'diff';
      'alias.dc':  value => 'log -p';
-     'color.ui':  value => 'true';
   }
   $home     = "/Users/${::boxen_user}"
   include projects::all
