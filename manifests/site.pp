@@ -76,6 +76,7 @@ node default {
   include ruby::2_0_0
 
   include chrome
+  include firefox
   include dropbox
   include emacs
   include mongodb
@@ -87,6 +88,7 @@ node default {
   include python::virtualenvwrapper
   include skype
   include evernote
+  include libreoffice
   include sublime_text_2
   sublime_text_2::package { 
     'Emmet':
