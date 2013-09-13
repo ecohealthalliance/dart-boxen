@@ -1,6 +1,5 @@
 class people::nicopresto {
-  include libreoffice
-  
+
   git::config::global {
     'user.name':
       value => 'Nico Preston';
