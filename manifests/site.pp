@@ -90,6 +90,7 @@ node default {
   include evernote
   include libreoffice
   include wget
+  include virtualbox
   include sublime_text_2
   sublime_text_2::package { 
     'Emmet':
