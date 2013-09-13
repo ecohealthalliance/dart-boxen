@@ -86,6 +86,7 @@ node default {
   include python
   include python::virtualenvwrapper
   include skype
+  include evernote
   include sublime_text_2
   sublime_text_2::package { 
     'Emmet':
