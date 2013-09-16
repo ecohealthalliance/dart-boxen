@@ -37,6 +37,7 @@ github "xquartz",    "1.1.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 github "chrome",     "1.1.1"
+github "dockutil",   "0.1.2", :repo => "grahamgilbert/puppet-dockutil"
 github "dropbox",    "1.1.1"
 github "emacs",      "1.1.0"
 github "mongodb",    "1.0.4"
