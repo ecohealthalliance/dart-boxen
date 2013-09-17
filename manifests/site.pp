@@ -77,15 +77,7 @@ node default {
 
   include eha::applications
   include eha::osx_config
-  include mongodb
-  include python
-  include python::virtualenvwrapper
-  include wget
-  git::config::global {
-    'color.ui': value => 'true';
-  }
-  class { 'nodejs::global': version => 'v0.10.13' }
-  include eha::node_modules
+  include eha::dev
 
   # common, useful packages
   package {
