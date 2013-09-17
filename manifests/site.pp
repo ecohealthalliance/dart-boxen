@@ -75,11 +75,8 @@ node default {
   include ruby::1_9_3
   include ruby::2_0_0
 
-  include chrome
-  include firefox
+  include eha::applications
   include dockutil
-  include dropbox
-  include emacs
   include mongodb
   include osx::global::expand_save_dialog
   include osx::finder::unhide_library
@@ -87,18 +84,7 @@ node default {
   include osx::software_update
   include python
   include python::virtualenvwrapper
-  include skype
-  include evernote
-  include libreoffice
   include wget
-  include virtualbox
-  include sublime_text_2
-  sublime_text_2::package { 
-    'Emmet':
-      source => 'sergeche/emmet-sublime';
-    'CoffeeScript':
-      source => 'Xavura/CoffeeScript-Sublime-Plugin';
-  }
   git::config::global {
     'color.ui': value => 'true';
   }
@@ -112,10 +98,6 @@ node default {
     domain => 'com.apple.finder',
     value  => true,
     notify => Exec['killall Finder'];
-  }
-
-  package { 'R':
-    ensure => installed;
   }
 
   dockutil::item {
