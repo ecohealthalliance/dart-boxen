@@ -15,8 +15,4 @@ class eha::applications {
       source => 'Xavura/CoffeeScript-Sublime-Plugin';
   }
 
-  package { 'R':
-    ensure => installed;
-  }
-
 }

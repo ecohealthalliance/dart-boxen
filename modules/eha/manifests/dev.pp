@@ -8,4 +8,9 @@ class eha::dev {
   }
   class { 'nodejs::global': version => 'v0.10.13' }
   include eha::node_modules
+
+  package { 'R':
+    ensure => installed;
+  }
+
 }
