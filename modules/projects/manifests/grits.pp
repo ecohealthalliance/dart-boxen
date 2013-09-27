@@ -17,6 +17,16 @@ class projects::grits {
     cwd => "${boxen::config::srcdir}/grits/client",
     path => "/bin:/usr/bin:${boxen::config::home}/nodenv/shims:${boxen::config::home}/nodenv/versions/v0.10/bin",
     command => "npm install; grunt";
+  }
 
+  file { "${boxen::config::home}/config/nginx/sites/grits.conf":
+    ensure => link,
+    target => "${boxen::config::srcdir}/grits/nginx.conf",
+    notify  => Service['dev.nginx'];
+  }
+
+  file { "${boxen::config::home}/data/nginx/grits":
+    ensure => link,
+    target => "${boxen::config::srcdir}/grits/client";
   }
 }
