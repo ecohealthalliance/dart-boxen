@@ -2,6 +2,7 @@ class eha::dev {
   include mongodb
   include python
   include python::virtualenvwrapper
+  include java
   include wget
   git::config::global {
     'color.ui': value => 'true';
