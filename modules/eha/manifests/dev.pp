@@ -14,4 +14,9 @@ class eha::dev {
     ensure => installed;
   }
 
+  exec { 'meteor install':
+    command => "curl https://install.meteor.com | /bin/sh; ln -s ~/.meteor/tools/latest/launch-meteor ${boxen::config::home}/bin/meteor"
+  }
+
+
 }
