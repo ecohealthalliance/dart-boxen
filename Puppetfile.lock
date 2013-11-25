@@ -1,12 +1,7 @@
 GITHUBTARBALL
-  remote: boxen/puppet-autoconf
-  specs:
-    autoconf (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.0.2)
+    boxen (3.3.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-chrome
@@ -39,6 +34,11 @@ GITHUBTARBALL
     firefox (1.1.3)
 
 GITHUBTARBALL
+  remote: boxen/puppet-foreman
+  specs:
+    foreman (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
     gcc (2.0.1)
@@ -49,9 +49,14 @@ GITHUBTARBALL
     git (1.2.5)
 
 GITHUBTARBALL
+  remote: boxen/puppet-go
+  specs:
+    go (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.4.1)
+    homebrew (1.5.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
@@ -81,7 +86,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (3.2.9)
+    nodejs (3.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -92,6 +97,16 @@ GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
     osx (1.6.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-phantomjs
+  specs:
+    phantomjs (2.0.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-pkgconfig
+  specs:
+    pkgconfig (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-python
@@ -106,7 +121,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (6.3.4)
+    ruby (6.7.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-skype
@@ -154,8 +169,7 @@ GITHUBTARBALL
     stdlib (4.1.0)
 
 DEPENDENCIES
-  autoconf (= 1.0.0)
-  boxen (= 3.0.2)
+  boxen (= 3.3.4)
   chrome (= 1.1.1)
   dnsmasq (= 1.0.0)
   dockutil (= 0.1.2)
@@ -163,21 +177,25 @@ DEPENDENCIES
   emacs (= 1.1.0)
   evernote (= 2.0.4)
   firefox (= 1.1.3)
+  foreman (= 1.0.0)
   gcc (= 2.0.1)
   git (= 1.2.5)
-  homebrew (= 1.4.1)
+  go (= 1.0.0)
+  homebrew (= 1.5.1)
   hub (= 1.0.3)
   inifile (= 1.0.0)
   java (= 1.1.2)
   libreoffice (= 4.1.1)
   mongodb (= 1.0.4)
   nginx (= 1.4.2)
-  nodejs (= 3.2.9)
+  nodejs (= 3.3.0)
   openssl (= 1.0.0)
   osx (= 1.6.0)
+  phantomjs (= 2.0.2)
+  pkgconfig (= 1.0.0)
   python (= 1.2.1)
   repository (= 2.2.0)
-  ruby (= 6.3.4)
+  ruby (= 6.7.2)
   skype (= 1.0.4)
   stdlib (= 4.1.0)
   sublime_text_2 (= 1.1.2)
