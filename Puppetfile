@@ -58,7 +58,7 @@ github "xquartz",    "1.1.0"
 # https://github.com/boxen.
 github "chrome",     "1.1.1"
 github "dockutil",   "0.1.2", :repo => "grahamgilbert/puppet-dockutil"
-github "dropbox",    "1.1.1"
+github "dropbox",    "1.2.0"
 github "emacs",      "1.1.0"
 github "mongodb",    "1.0.4"
 github "osx",        "1.6.0"
