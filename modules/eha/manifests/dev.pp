@@ -7,7 +7,7 @@ class eha::dev {
   git::config::global {
     'color.ui': value => 'true';
   }
-  class { 'nodejs::global': version => 'v0.10.13' }
+  class { 'nodejs::global': version => 'v0.10.21' }
   include eha::node_modules
 
   package { 'R':
